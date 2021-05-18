@@ -1,2 +1,4 @@
 # `www.lukechinworth.com`
-* Hosted on s3.
+
+* Built with Hugo.
+* Hosted on Netlify.

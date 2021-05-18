@@ -1,0 +1,104 @@
+/*
+ * Utility classes.
+ */
+.align-items-center {
+  align-items: center;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.monospace {
+  font-family: monospace;
+  /* Chrome automatically decreases the font size to 13 when using monospace, so force it to default of 16. */
+  font-size: 1rem;
+}
+
+.m-0 {
+  margin: 0;
+}
+
+.flex {
+  display: flex;
+}
+
+.vh-100 {
+  height: 100vh;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.bottom-3 {
+  bottom: 1rem;
+}
+
+.bg-gray-tuatara {
+  background-color: #363532;
+}
+
+.white {
+    color: white;
+}
+
+.orange-gimblet {
+  color: #B5BD68;
+}
+
+.blue-cornflower {
+  color: #7C99F7;
+}
+
+.red-torch {
+  color: #F72020;
+}
+
+.purple-heliotrope {
+  color: #D132FC;
+}
+
+.yellow-portica {
+  color: #F7ED59;
+}
+
+.dec-none {
+  text-decoration: none;
+}
+
+/*
+ * Component classes.
+ */
+.name {
+  padding-bottom: 1em;
+  border-bottom: 1px solid white;
+}
+
+.info-block {
+  list-style-type: none;
+}
+
+@media (min-width: 480px) {
+  .content {
+      width: 100%;
+      display: flex;
+      align-items: center;
+  }
+
+  .half {
+    width: 50%;
+  }
+
+  .name {
+    padding-right: 30px;
+    text-align: right;
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+
+  .info-block {
+    padding-left: 30px;
+    border-left: 1px solid white;
+  }
+}

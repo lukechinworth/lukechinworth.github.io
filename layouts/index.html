@@ -1,0 +1,30 @@
+{{ define "header" }}&nbsp;{{ end }}
+
+{{ define "main" }}
+<section class="flex justify-content-center align-items-center vh-100">
+  <div class="content">
+    <div class="half">
+      <p class="name white">Luke Chinworth</p>
+    </div>
+    <div class="half">
+      <div class="info-block">
+        <p><a class="orange-gimblet dec-none" href="https://github.com/lukechinworth">github</a></p>
+        <p><a class="blue-cornflower dec-none" href="https://www.slantmagazine.com/author/lchinworth">slant</a></p>
+        <p><a class="red-torch dec-none" href="http://drawdistance.tumblr.com">tumblr</a></p>
+        <p><a class="yellow-portica dec-none" href="mailto:lukechinworth@gmail.com">email</a></p>
+      </div>
+    </div>
+  </div>
+
+  <span class="white absolute bottom-3">blog ↓</span>
+</section>
+<section>
+  <ul>
+    {{ range .Pages }}
+    <li>
+      <a class="white" href="{{ .Permalink }}">{{ .Date.Format "2006-01-02" }} | {{ .Title }}</a>
+    </li>
+    {{ end }}
+  </ul>
+</section>
+{{ end }}

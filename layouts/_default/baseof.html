@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-51578415-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-51578415-2');
+    </script>
+
+    <title>{{ .Site.Title }} {{ with .Params.Title }} | {{ . }}{{ end }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Web developer" />
+    <meta name="keywords" content="luke chinworth, lukechinworth, chinworth, luke, web developer">
+
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body class="bg-gray-tuatara monospace m-0 white">
+    {{ block "body" . }}
+    {{ block "header" . }}
+    <header><a href="/">Luke Chinworth</a></header>
+    {{ end }}
+    {{ block "main" . }}{{ end }}
+    {{ block "footer" . }}
+    <footer>Built with Hugo. 2021 Luke Chinworth</footer>
+    {{ end }}
+    {{ end }}
+</body>
+
+</html>
