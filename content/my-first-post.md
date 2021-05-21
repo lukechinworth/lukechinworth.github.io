@@ -5,3 +5,7 @@ draft: false
 ---
 
 This is my first post created with the hugo static site generator.
+
+```js
+console.log('test');
+```
