@@ -19,12 +19,16 @@
   <span class="white absolute bottom-3">blog ↓</span>
 </section>
 <section>
-  <ul>
-    {{ range .Pages }}
-    <li>
-      <a class="white" href="{{ .Permalink }}">{{ .Date.Format "2006-01-02" }} | {{ .Title }}</a>
-    </li>
-    {{ end }}
-  </ul>
+  <div style="max-width: 600px;" class="px-3 m-auto">
+    <ul>
+      {{ range .Pages }}
+      <li class="my-3">
+        <a class="white" href="{{ .Permalink }}">{{ .Title }}</a>
+        <br/>
+        {{ .Date.Format "2006-01-02" }}
+      </li>
+      {{ end }}
+    </ul>
+  </div>
 </section>
 {{ end }}

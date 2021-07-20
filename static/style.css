@@ -19,6 +19,24 @@
   margin: 0;
 }
 
+.my-3 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.m-auto {
+  margin: auto;
+}
+
+.p-3 {
+  padding: 1rem;
+}
+
+.px-3 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
 .flex {
   display: flex;
 }

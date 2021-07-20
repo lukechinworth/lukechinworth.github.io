@@ -1,6 +1,9 @@
 {{ define "main" }}
 <section>
-    <h1>{{ .Title }}</h1>
-    <article>{{ .Content }}</article>
+    <div style="max-width: 600px;" class="px-3 m-auto">
+        <h1>{{ .Title }}</h1>
+        <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006-01-02" }}</time>
+        <article>{{ .Content }}</article>
+    </div>
 </section>
 {{ end }}

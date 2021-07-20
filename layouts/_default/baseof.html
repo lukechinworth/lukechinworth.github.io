@@ -23,11 +23,19 @@
 <body class="bg-gray-tuatara monospace m-0 white">
     {{ block "body" . }}
     {{ block "header" . }}
-    <header><a href="/">Luke Chinworth</a></header>
+    <header>
+        <div class="p-3">
+            <a href="/" class="white">Luke Chinworth</a>
+        </div>
+    </header>
     {{ end }}
     {{ block "main" . }}{{ end }}
     {{ block "footer" . }}
-    <footer>Built with Hugo. 2021 Luke Chinworth</footer>
+    <footer>
+        <div class="p-3">
+            © 2021 Luke Chinworth
+        </div>
+    </footer>
     {{ end }}
     {{ end }}
 </body>
